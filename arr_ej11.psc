@@ -17,23 +17,35 @@ Algoritmo arr_ej11
 
 	
 	Para i<-1 Hasta n_algebra Con Paso 1 Hacer
-		Para j<-i+1 Hasta n_algoritmos Con Paso 1 Hacer
+		Para j<-1 Hasta n_algoritmos Con Paso 1 Hacer
 			Si est_algebra[i] == est_algoritmos[j] Entonces
 				contador_arr_c <- contador_arr_c + 1
 			Fin Si
 		Fin Para
 	Fin Para
 	
-	Dimension arr_c(contador_arr_c)
-	
-	k <- 1
-	Para i<-1 Hasta contador_arr_c Con Paso 1 Hacer
-		Para j<-i+1 Hasta n_algoritmos Con Paso 1 Hacer
-			Si est_algebra[i] == est_algoritmos[j] Entonces
-				arr_c[k] <- est_algebra[i] 
-				k <- k + 1
-			Fin Si
+	Si contador_arr_c > 0 Entonces
+		Dimension arr_c(contador_arr_c)
+		
+		k <- 1
+		Para i<-1 Hasta contador_arr_c Con Paso 1 Hacer
+			Para j<-1 Hasta n_algoritmos Con Paso 1 Hacer
+				Si est_algebra[i] == est_algoritmos[j] Entonces
+					arr_c[k] <- est_algebra[i] 
+					k <- k + 1
+				Fin Si
+			Fin Para
 		Fin Para
-	Fin Para
+		
+		Para i<-1 Hasta contador_arr_c Con Paso 1 Hacer
+			Escribir "El estudiante ", i " con numero ", arr_c[i], " se encuentra cursando los dos cursos" 
+		Fin Para
+	SiNo
+		Escribir "No hay estudiantes cursando dos cursos simultaneamente"
+	Fin Si
+	
+	
+	
+	
 	
 FinAlgoritmo
