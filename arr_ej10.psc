@@ -5,7 +5,7 @@ Algoritmo arr_ej10
 	Dimension array_nombres(n)
 	Dimension array_longitud(n)
 	
-	Para i<-1 Hasta n Con Paso paso Hacer
+	Para i<-1 Hasta n Con Paso 1 Hacer
 		Escribir "Digite el nombre de la persona en la posicion ", i
 		Leer array_nombres[i]
 		array_longitud[i] <- Longitud(array_nombres[i])
