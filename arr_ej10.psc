@@ -12,7 +12,7 @@ Algoritmo arr_ej10
 	Fin Para
 	
 	Para i<-1 Hasta n Con Paso 1 Hacer
-		Escribir array_longitud[i]
+		Escribir array_nombres[i], " tiene ", array_longitud[i], " caracteres."
 	Fin Para
 	
 FinAlgoritmo
