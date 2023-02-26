@@ -11,7 +11,7 @@ Algoritmo arr_ej10
 		array_longitud[i] <- Longitud(array_nombres[i])
 	Fin Para
 	
-	Para 1<-1 Hasta n Con Paso paso Hacer
+	Para 1<-1 Hasta n Con Paso 1 Hacer
 		Escribir array_longitud[i]
 	Fin Para
 	
